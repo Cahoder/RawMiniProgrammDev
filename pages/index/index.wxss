@@ -1,0 +1,134 @@
+/**index.wxss**/  
+    .tab{ 
+      width: 100%;
+      }
+    .navbar{  
+        width: 100%;
+        line-height: 80rpx;
+        background: #fff;
+        display: flex;
+        flex-flow: row wrap;     /* 设置元素排列方向（从上到下·从左到右） 和 超出时怎么解决(换行·不换行·反转) */
+        justify-content: center;  /* 主轴上对齐方式   */
+    }
+    .title{
+      width: 50%;
+      padding: 0 25%;
+      z-index: 9999;
+    }
+    .title__item{
+      font-size: 30rpx;  
+      display: inline-block;  
+      width: 50%;
+      color: #333;  
+      text-align: center;
+    }  
+    .item_on{ 
+      color: #00AC2C;  
+      border-bottom: 4rpx solid #00AC2C;
+    }  
+    
+    .Classified{
+      width: 40%;
+      height: 20rpx;
+      display: inline-flex;
+    }
+    .havefound{
+      font-size: 20rpx;
+      color: gray;
+    }
+    .nofound{
+      color: red;
+      font-size: 20rpx;
+    }
+    .flex1{
+      font-size: 60%;
+    }
+    .search{
+      width: 50%;
+      background-color: #e8e8e8; 
+      border-radius: 10rpx; 
+      margin-top: 2%
+    }
+    .search_input{
+      font-size: 60%;
+      margin-left: 10rpx;
+      
+    }
+    .searchcion{
+      position: absolute;
+      top: 105rpx;
+      left: 90%
+    }
+    ._cont{
+      width: 94%;
+      height: 94%;
+      margin-left: 3%;
+      margin-top: 1%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between
+    }
+    .see_img{
+      width: 20%;
+      height: 100%;
+    }
+    .left_text{
+      width: 65%;
+      height: 97%;
+      margin-left: 2%;
+    }
+    .left_text_title{
+      font-size: 30rpx;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+    .left_text_where text{
+      font-size: 20rpx;
+      color: grey;
+      margin: 4rpx 0;
+    }
+    .left_text_de{
+      font-size: 20rpx;
+      color: #f22b2b;
+      margin-top: 2rpx;
+    }
+    .right_text{
+      width: 12%;
+      height: 97%;
+      font-size: 18rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+    .right_text view{
+      padding: 13% 0rpx;
+    }
+    ._type{
+      font-size: 18rpx;
+      color: greenyellow;
+    }
+    .seetimes{
+      color: gray;
+      font-size: 20rpx;
+      font-weight: bolder;
+    }
+    ._time{
+      color: gainsboro;
+      font-size: 18rpx;
+    }
+    .youfind{
+      background-color: white;
+      border-top: 0.5rpx solid whitesmoke;
+      border-bottom: 0.5rpx solid whitesmoke;
+      width: 100%;
+      height: 150rpx;
+    }
+    .icon_place{
+      width: 25rpx;
+      height: 25rpx;
+    }
+    .loadingImg{width: 100%;text-align: center}
+    .loadingImg image{ width: 20px; height: 20px}
+    .loadingTxt{width: 100%; text-align: center; color: #999;font-size: 20rpx;}
+    .noTxt{width: 100%; text-align: center; color: #999;font-size: 30rpx;border-top: 10rpx;}

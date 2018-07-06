@@ -1,0 +1,96 @@
+/**index.wxss**/  
+    .tab{
+      width: 100%;
+      }
+    ._cont{
+      width: 94%;
+      height: 94%;
+      margin-left: 3%;
+      margin-top: 1%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between
+    }
+    .see_img{
+      width: 20%;
+      height: 100%;
+    }
+    .left_text{
+      width: 65%;
+      height: 97%;
+      margin-left: 2%;
+    }
+    .left_text_title{
+      font-size: 30rpx;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+    .left_text_where text{
+      font-size: 20rpx;
+      color: grey;
+      margin: 4rpx 0;
+    }
+    .left_text_de{
+      font-size: 20rpx;
+      color: #f22b2b;
+      margin-top: 2rpx;
+    }
+    .right_text{
+      width: 12%;
+      height: 97%;
+      font-size: 18rpx;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+    .right_text view{
+      padding: 20% 0rpx;
+    }
+    .havefound{
+      font-size: 20rpx;
+      color: gray;
+    }
+    .nofound{
+      color: red;
+      font-size: 20rpx;
+    }
+    .seetimes{
+      color: gray;
+      font-size: 20rpx;
+      font-weight: bolder;
+    }
+    ._time{
+      color: gainsboro;
+      font-size: 18rpx;
+    }
+    .youfind{
+      background-color: white;
+      border-top: 0.5rpx solid whitesmoke;
+      border-bottom: 0.5rpx solid whitesmoke;
+      width: 100%;
+      height: 150rpx;
+      display: flex;
+      flex-flow: row wrap;     /* 设置元素排列方向（从上到下·从左到右） 和 超出时怎么解决(换行·不换行·反转) */
+      justify-content: center;  /* 主轴上对齐方式   */
+    }
+    .icon_place{
+      width: 25rpx;
+      height: 25rpx;
+    }
+    ._switch{
+      position: absolute;
+      width: 70%;
+      height: 70%;
+      left: 72%;
+    }
+    .del_img{
+      width: 30rpx;
+      height: 30rpx;
+      position: absolute;
+      left: 90%;
+      margin-top:13%; 
+    }
+    .wx-switch-input{width:42px !important;height:20px !important;}
+    .wx-switch-input::before{width:41px !important;height: 20px !important;}
+    .wx-switch-input::after{width: 18px !important;height: 18px !important;}

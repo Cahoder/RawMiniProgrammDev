@@ -1,0 +1,74 @@
+<view>
+  <view class='header'>
+    <view class="userinfo">
+      <view>
+        <image class="userinfo-avatar" src="{{content.user_avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{content.user_name}}</text>
+        <text class='pulish_time'>{{content.publish_time}}</text>
+      </view>
+      <view>
+        <text>{{had_befound[content.if_befound]}}实物</text>
+      </view>
+    </view>
+
+    <view class='header_text'>
+      <text class='header_text_title'>{{content.title}}</text>
+      <view class='header_text_type_and_where'>
+        {{ClassChange[content.goods_type]}}
+        <text>{{content.position}}</text>
+      </view>
+      <view class='header_text_cont'>
+        <text>{{content.content}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='middle'>
+
+    <view class='callto'>
+      <view>
+        <icon type='info' size='15'></icon>
+        <text> {{content.telephone}}</text>
+      </view>
+      <view>
+        <button class='call_btn' bindtap='call_to' id='{{content.telephone}}'>一键拨号</button>
+      </view>
+    </view>
+
+    <view class='img_class' wx:for='{{content.prc_img}}' wx:key='{{item}}'>
+      <image src='{{http_src}}/{{item.img_list}}' ></image>
+    </view>
+    
+
+  </view>
+
+</view>
+
+<view style='height:120rpx'></view>
+
+<view class='bottom'>
+  <view class='home_re' bindtap='return_home'>
+    <view class='home'>
+      <image src='/images/home.png' style="width: 70rpx; height: 70rpx"></image>
+    </view>
+    <view class='home_zi'>
+      <text>首页</text>
+    </view>
+  </view>
+  <view style='color:#F7F7F7; font-size:85rpx; font-weight:100;'>|</view>
+  <view class='hide' bindtap='col_click'>
+    <view class='home'>
+      <image src='/images/collect.png' style="width: 70rpx; height: 70rpx"></image>
+    </view>
+    <view class='home_zi'>
+      <text>{{collect ==contentDetail[0].collect?'收藏':'已藏'}}</text>
+    </view>
+  </view>
+  <view style='color:#F7F7F7; font-size:85rpx; font-weight:100;'>|</view>
+  <view class='more'>
+    <button open-type="share" class="button-share" class="share-button" id='share-button'></button>
+    <label for="share-button">
+      <image style="width: 280rpx; height: 60rpx" src="/images/sharp.png" />
+    </label>
+  </view>
+</view>

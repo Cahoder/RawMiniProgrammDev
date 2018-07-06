@@ -1,0 +1,111 @@
+.mian {
+  width: 100%;
+}
+
+.biaoti {
+  width: 100%;
+  padding: 20rpx 0 10rpx 30rpx;
+  border-bottom: 1rpx #f7f7f7 solid;
+  font-size: 30rpx;
+  background-color: white;
+}
+.detail {
+  width: 100%;
+  background-color: white;
+  padding: 20rpx 0 10rpx 30rpx;
+  font-size: 32rpx;
+}
+
+.placeholder {
+  font-weight: lighter;
+  font-size: 30rpx;
+  
+}
+.placeholder2{
+  color: gainsboro;
+}
+
+
+.tupian {
+  background-color: white;
+}
+
+.uploadPic {
+  height: 15%;
+  width: 15%;
+  padding: 0rpx 30rpx;
+}
+
+.uploadPics {
+  padding: 0rpx 20rpx;
+}
+
+.leixing {
+  background-color: white;
+  font-size: 30rpx;
+  margin-top: 3%;
+  height: 90rpx;
+}
+
+.lei {
+  color: #8c8c8c;
+  padding-left: 30rpx;
+}
+
+.radio {
+  float: right;
+  transform: scale(0.9);
+  padding-right: 30rpx;
+}
+
+.radio-group {
+  padding-top: 27.5rpx;
+}
+
+.weizhi {
+  padding-top: 27.5rpx;
+}
+
+.picker {
+  float: right;
+  padding-right: 30rpx;
+}
+
+.gundan {
+  background-color: white;
+  font-size: 30rpx;
+  height: 90rpx;
+  border-top: 1rpx #f7f7f7 solid;
+}
+
+.text_input {
+  width: 100%;
+  padding: 20rpx 0 10rpx 30rpx;
+  border-bottom: 1rpx #f7f7f7 solid;
+  font-size: 30rpx;
+  background-color: white;
+  display: flex;
+}
+
+.zi {
+  width: 20%;
+  color: #8c8c8c;
+}
+
+.mbBtn {
+  width: 90%;
+  margin: 40rpx auto 0;
+}
+
+.mbBtn button::after {
+  border: 0;
+}
+
+.mbBtn .vBtn_ok {
+  border: 0;
+  background: #00ced1;
+  color: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+}

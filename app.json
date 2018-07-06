@@ -1,0 +1,44 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/post/post",
+    "pages/person/person",
+    "pages/index/detail",
+    "pages/myself/myself",
+    "pages/collect/collect",
+    "pages/feedback/feedback",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor":"#eaeaea",
+    "navigationBarBackgroundColor": "#5bba7f",
+    "navigationBarTitleText": "轻觅",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "轻觅",
+        "iconPath": "images/find.png"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "发帖",
+        "iconPath": "images/send_post.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我",
+        "iconPath": "images/user.png"
+      }
+    ],
+    "color": "black",
+    "selectedColor": "rbg(255,83,77)",
+    "backgroundColor": "white",
+    "borderStyle": "black"
+  },
+  "workers": "workers"
+}

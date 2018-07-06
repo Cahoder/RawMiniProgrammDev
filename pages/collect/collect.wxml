@@ -1,0 +1,31 @@
+<view class="tab">
+    <view class='youfind' wx:for='{{example}}' wx:key='{{}}'>
+
+    <navigator  class='_cont' url="/pages/index/detail?_id={{item._id}}&type_={{item.type_}}" hover-class="navigator-hover">
+      <block wx:if="{{item.prc_img[0].img_list}}">
+        <image src='{{http_src}}/{{item.prc_img[0].img_list}}'></image>
+      </block>
+      <block wx:else>
+        <image src='/images/img.png'></image>
+      </block>
+      <view class='left_text'>
+        <text class='left_text_title'>{{item.title}}</text>
+        <view class='left_text_where'>
+          <icon type='warn' size='15'></icon>
+          <text>{{item.position}}</text>
+        </view>
+        <view class='left_text_de'>
+          <text>{{had_befound[item.if_befound]}}</text>
+        </view>
+      </view>
+
+      <view class='right_text'>
+        <view class='_type'>{{ClassChange[item.goods_type]}}</view>
+        <view class='seetimes'>浏览{{item.borwser_times}}次</view>
+        <view class='_time'>{{item.publish_time}}</view>
+      </view>
+
+    </navigator>
+
+  </view>
+</view>

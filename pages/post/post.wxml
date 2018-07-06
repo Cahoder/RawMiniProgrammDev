@@ -1,0 +1,51 @@
+<view class='mian'>
+  <form bindsubmit='formSubmit'>
+    <view class='miaoshu'>
+      <input placeholder='请输入标题' placeholder-class='placeholder' class='biaoti' name='title' value='{{val}}' maxlength='50'></input>
+    </view>
+
+    <view class='xiangxi'>
+      <textarea placeholder='详细描述...' placeholder-class='placeholder' class='detail' name='content' value='{{val}}' maxlength='100'></textarea>
+    </view>
+
+    <view bindtap="checkimg" class='tupian'>
+      <image wx:for="{{imglist}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key="" style="width: 100rpx; height: 100rpx" name="images"></image>
+      <image src="../../images/img.png" class="uploadPic" mode="widthFix"></image>
+    </view>
+
+    <view class='leixing'>
+      <radio-group class="radio-group" bindchange="radioChange" name="type">
+        <text class='lei'>类型</text>
+        <label class="radio" wx:for="{{type_items}}" wx:key="item">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='text_input'>
+      <view class='zi'>位置</view>
+      <input placeholder='请输入位置' placeholder-class='placeholder2' class='postion' name='position' maxlength='11' style='width: 160%' value='{{val}}'></input>
+    </view>
+
+    <view class='gundan'>
+      <picker bindchange='bindPickerChange' value='{{option_index}}' range='{{option_type}}' class='weizhi' name="goods_type">
+        <text class='lei'>物品分类</text>
+        <view class='picker'>
+          {{option_type[option_index]}}>
+        </view>
+      </picker>
+    </view>
+
+    <view class='text_input'>
+      <view class='zi'>联系电话</view>
+      <view>
+        <input placeholder='请输入11位联系电话' placeholder-class='placeholder2' maxlength='11' style='width: 160%;' name="tele" value='{{val}}'>
+        </input>
+      </view>
+    </view>
+
+    <view class="mbBtn">
+      <button class="vBtn_ok" formType="submit" loading="{{loading}}" disabled="{{disabled}}" hover-class="button-hover" bindtap='post_'>提交发布</button>
+    </view>
+  </form>
+</view>

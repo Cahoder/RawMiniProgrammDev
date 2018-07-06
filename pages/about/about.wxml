@@ -1,0 +1,17 @@
+<!--pages/about/about.wxml-->
+<view class='all'>
+<view><image class="img1" src="/images/logo.png"></image>
+</view>
+<view class='t1'>
+<text>轻 觅</text>
+</view>
+<view class='t2'>
+<text>在缤纷的花下，寻你</text>
+</view>
+<view class='t3'>
+<text> 广东轻院·数媒 版权所有</text>
+</view>
+<view class='t4'>
+<text>Copyright©2018-2019 SM.All Rights Reserved.</text>
+</view>
+</view>

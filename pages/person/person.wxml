@@ -1,0 +1,16 @@
+<!--pages/person/person.wxml-->
+<view class='container'>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权注册</button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+  <view class="tab" bindtap="bindViewTap" wx:for="{{list_tab}}" wx:key="{{}}" id='{{index}}'>
+      <text class="user-motto">{{item}}</text>
+      <image class="icon_to" src="../../images/right.png"></image>
+  </view>
+</view>
+

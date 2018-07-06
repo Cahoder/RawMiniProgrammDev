@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class="tab">
+  <view class="navbar">
+    <view class='title'>
+      <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+        <view id="{{index}}" class="title__item {{activeIndex == index ? 'item_on' : ''}}" bindtap="tabClick">
+          {{item}}
+        </view>
+      </block>
+    </view>
+    <!--搜索分类栏-->
+
+    <view class="Classified" bindtap='No_open'>
+      <picker mode="selector" range='{{areaChange}}' value='{{area_index}}' bindchange="areaChange" class="flex1">
+        <text class="text">{{areaChange[area_index]}}--▼</text>
+      </picker>
+      <view style="width:10px;"> </view>
+      <picker mode="selector" range='{{ClassChange}}' value='{{Class_index}}' bindchange="ClassChange" class="flex1">
+        <text class="text">{{ClassChange[Class_index]}}--▼</text>
+      </picker>
+    </view>
+
+    <view class='search' bindtap='No_open'>
+      <input placeholder='筛选和搜索功能暂未开放' class='search_input' value='{{search}}'></input>
+      <icon class="searchcion" size='15' type='search'></icon>
+    </view>
+  </view>
+
+
+  <!--内容-->
+  <view class='youfind' wx:for='{{example}}' wx:key='{{}}'>
+
+    <navigator class='_cont' url="./detail?_id={{item._id}}&type_={{item.type_}}" hover-class="navigator-hover">
+      <block wx:if="{{item.prc_img[0].img_list}}">
+        <image src='{{http_src}}/{{item.prc_img[0].img_list}}' class='see_img'></image>
+      </block>
+      <block wx:else>
+        <image src='/images/logo_small.png' class='see_img'></image>
+      </block>
+      <view class='left_text'>
+        <text class='left_text_title'>{{item.title}}</text>
+        <view class='left_text_where'>
+          <image src='/images/place.png' class='icon_place'></image>
+          <text>{{item.position}}</text>
+        </view>
+        <view class='left_text_de'>
+          <text class="{{item.if_befound ==0 ? 'nofound' : 'havefound'}}">{{had_befound[item.if_befound]}}</text>
+        </view>
+      </view>
+
+      <view class='right_text'>
+        <view class='_type'>{{ClassChange[item.goods_type]}}</view>
+        <view class='seetimes'>浏览#次</view>
+        <view class='_time'>{{(item.publish_time)}}</view>
+      </view>
+
+    </navigator>
+
+  </view>
+
+
+  <view hidden="{{havedata}}" class="loading">
+    <view class="loadingImg">
+      <image src="/images/loading.gif" mode="aspectFill"></image>
+    </view>
+    <view class="loadingTxt">..加载中..</view>
+  </view>
+
+  <view class="displayNo" hidden="{{nodata}}">
+    <view class="noTxt">..木有内容啦..</view>
+  </view>
+
+</view>

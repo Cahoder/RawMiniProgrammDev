@@ -1,0 +1,14 @@
+.feedback-btn{
+  width: 60%
+}
+.cell__bd{
+  width: 96%;
+  border: 1rpx dashed gray;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.cell_text{
+  padding: 2%;
+  color: gray;
+}

@@ -1,0 +1,10 @@
+<form bindsubmit="formSubmit">
+  <view class="cells weui-cells_after-title">
+    <view class="cell">
+      <view class="cell__bd">
+        <textarea class="cell_text" auto-focus placeholder="欢迎向我们提出宝贵意见..." placeholder-style='font-size:30rpx;color:gray;' name="text"/>
+      </view>
+    </view>
+  </view>
+  <button formType="submit" type="primary" class='feedback-btn'>反馈</button>
+</form>

@@ -1,0 +1,34 @@
+<view class="tab">
+  <view class='youfind' wx:for='{{example}}' wx:key='{{}}'>
+
+    <navigator class='_cont' url="/pages/index/detail?_id={{item._id}}&type_={{item.type_}}" hover-class="navigator-hover">
+      <block wx:if="{{item.prc_img[0].img_list}}">
+        <image src='{{http_src}}/{{item.prc_img[0].img_list}}' class='see_img'></image>
+      </block>
+      <block wx:else>
+        <image src='/images/logo_small.png' class='see_img'></image>
+      </block>
+      <view class='left_text'>
+        <text class='left_text_title'>{{item.title}}</text>
+        <view class='left_text_where'>
+          <image src='/images/place.png' class='icon_place'></image>
+          <text>{{item.position}}</text>
+        </view>
+        <view class='left_text_de'>
+          <text>{{item.publish_time}}</text>
+        </view>
+      </view>
+
+      <view class='right_text'>
+        <view class="{{item.if_befound ==0 ? 'nofound' : 'havefound'}}">{{had_befound[item.if_befound]}}</view>
+        <!--<view class='seetimes'>浏览{{item.borwser_times}}次</view>
+        <view class='_time'>{{item.publish_time}}</view>-->
+        
+      </view>
+
+    </navigator>
+    <switch wx:if="{{item.if_befound == '0'}}" data-id='{{index}}' checked="{{isChecked}}" bindchange="switchChange" class='_switch' id='{{(item._id)+5201314520+(item.type_)+5201314520+(item.if_befound)}}'/>
+    <image src='/images/delete.png' class='del_img' bindtap='deltouch' id='{{(item._id)+5201314520+(item.type_)}}' data-index='{{index}}'></image>
+    
+  </view>
+</view>
