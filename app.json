@@ -35,10 +35,10 @@
         "iconPath": "images/user.png"
       }
     ],
-    "color": "black",
-    "selectedColor": "rbg(255,83,77)",
+    "color": "gainsboro",
+    "selectedColor": "white",
     "backgroundColor": "white",
-    "borderStyle": "black"
+    "borderStyle": "white"
   },
   "workers": "workers"
 }

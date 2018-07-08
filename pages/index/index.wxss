@@ -61,20 +61,20 @@
     }
     ._cont{
       width: 94%;
-      height: 94%;
       margin-left: 3%;
       margin-top: 1%;
       display: inline-flex;
       flex-direction: row;
-      justify-content: space-between
+      justify-content: space-between;
+      height: 150rpx;
     }
     .see_img{
       width: 20%;
-      height: 100%;
+      height: 140rpx;
     }
     .left_text{
       width: 65%;
-      height: 97%;
+      height: 150rpx;
       margin-left: 2%;
     }
     .left_text_title{
@@ -106,7 +106,7 @@
     }
     ._type{
       font-size: 18rpx;
-      color: greenyellow;
+      color: LightSteelBlue;
     }
     .seetimes{
       color: gray;
@@ -131,4 +131,4 @@
     .loadingImg{width: 100%;text-align: center}
     .loadingImg image{ width: 20px; height: 20px}
     .loadingTxt{width: 100%; text-align: center; color: #999;font-size: 20rpx;}
-    .noTxt{width: 100%; text-align: center; color: #999;font-size: 30rpx;border-top: 10rpx;}
+    .noTxt{width: 100%; text-align: center; color: #999;font-size: 24rpx;border-top: 10rpx;opacity: 0.5;}

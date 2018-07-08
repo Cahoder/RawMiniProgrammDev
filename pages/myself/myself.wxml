@@ -1,4 +1,4 @@
-<view class="tab">
+<scroll-view class="tab" >
   <view class='youfind' wx:for='{{example}}' wx:key='{{}}'>
 
     <navigator class='_cont' url="/pages/index/detail?_id={{item._id}}&type_={{item.type_}}" hover-class="navigator-hover">
@@ -14,7 +14,7 @@
           <image src='/images/place.png' class='icon_place'></image>
           <text>{{item.position}}</text>
         </view>
-        <view class='left_text_de'>
+        <view class='_time'>
           <text>{{item.publish_time}}</text>
         </view>
       </view>
@@ -31,4 +31,4 @@
     <image src='/images/delete.png' class='del_img' bindtap='deltouch' id='{{(item._id)+5201314520+(item.type_)}}' data-index='{{index}}'></image>
     
   </view>
-</view>
+</scroll-view>

@@ -74,8 +74,6 @@
   padding-top: 10rpx;
 }
 .img_class image{
-  width: 500rpx;
-  height: 500rpx;
   margin-bottom: 10rpx solid whitesmoke;
 }
 
@@ -89,7 +87,6 @@
   bottom:0;
   justify-content:space-around;
   box-shadow: 0px -1px 5px #c2c2c1;
-  
 }
 .home_re{
   display: flex;

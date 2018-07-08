@@ -32,10 +32,10 @@
 
     <navigator class='_cont' url="./detail?_id={{item._id}}&type_={{item.type_}}" hover-class="navigator-hover">
       <block wx:if="{{item.prc_img[0].img_list}}">
-        <image src='{{http_src}}/{{item.prc_img[0].img_list}}' class='see_img'></image>
+        <image src='{{http_src}}/{{item.prc_img[0].img_list}}' class='see_img' ></image>
       </block>
       <block wx:else>
-        <image src='/images/logo_small.png' class='see_img'></image>
+        <image src='/images/logo_small.png' class='see_img' mode='widthFix'></image>
       </block>
       <view class='left_text'>
         <text class='left_text_title'>{{item.title}}</text>
@@ -67,7 +67,7 @@
   </view>
 
   <view class="displayNo" hidden="{{nodata}}">
-    <view class="noTxt">..木有内容啦..</view>
+    <view class="noTxt">- - - - - - - - - - - - - - - -木有内容啦- - - - - - - - - - - - - - - -</view>
   </view>
 
 </view>

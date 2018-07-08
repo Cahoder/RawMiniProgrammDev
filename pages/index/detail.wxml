@@ -36,7 +36,7 @@
     </view>
 
     <view class='img_class' wx:for='{{content.prc_img}}' wx:key='{{item}}'>
-      <image src='{{http_src}}/{{item.img_list}}' ></image>
+      <image src='{{http_src}}/{{item.img_list}}' mode='widthFix'></image>
     </view>
     
 
